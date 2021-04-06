@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style>
+		body{ 
+		text-align: center 
+		}
+	</style>
+
+<h1>Colour Flipper</h1>
+
+<button type="button" onclick="change()">Change Color</button>
+
+<script>
+	let colours = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'brown']
+	let index = - 1
+function change() {
+	if (index >= colours.length){ index = 0 }
+	else {index += 1}
+	document.body.style.backgroundColor = colours[index];
+}
+</script>
+
+</body>
+</html>
